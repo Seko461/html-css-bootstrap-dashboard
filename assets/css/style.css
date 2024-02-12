@@ -30,12 +30,32 @@
     flex-direction: column-reverse;
 }
 
+table {
+    font-size: .75rem
+}
+
+th {
+    padding-inline: 1rem;
+}
+
+.start_date,
+.roi {
+    visibility: hidden;
+}
+
+
 @media screen and (min-width:575px) {
 
     .main_top,
     .center_plus_right {
         flex-direction: row;
     }
+
+    .start_date,
+    .roi {
+        visibility: visible;
+    }
+
 
 }
 
@@ -46,8 +66,6 @@
         display: none;
     }
 
-    /* .main_top {
-        flex-direction: row;
-    } */
+
 
 }
