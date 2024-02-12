@@ -4,3 +4,27 @@
     font-family: 'Roboto', sans-serif;
     border: 1px dashed red;
 }
+
+
+
+.side_bar {
+    height: 100%;
+    width: fit-content;
+}
+
+#site_main {
+    display: flex;
+    flex-direction: row;
+    height: 900px;
+}
+
+.main_top {
+    height: fit-content;
+}
+
+@media screen and (max-width:768px) {
+    .side_bar_item>a>span {
+        display: none;
+    }
+
+}
