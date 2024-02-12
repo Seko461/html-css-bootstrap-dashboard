@@ -23,11 +23,11 @@
 
 .main_top {
     height: fit-content;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .center_plus_right {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 @media screen and (min-width:575px) {
