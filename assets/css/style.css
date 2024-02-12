@@ -5,7 +5,10 @@
     border: 1px dashed red;
 }
 
-
+/* body {
+    max-width: 1400px;
+    margin: auto;
+} */
 
 .side_bar {
     height: 100%;
@@ -20,11 +23,31 @@
 
 .main_top {
     height: fit-content;
+    flex-direction: column;
 }
+
+.center_plus_right {
+    flex-direction: column;
+}
+
+@media screen and (min-width:575px) {
+
+    .main_top,
+    .center_plus_right {
+        flex-direction: row;
+    }
+
+}
+
+
 
 @media screen and (max-width:768px) {
     .side_bar_item>a>span {
         display: none;
     }
+
+    /* .main_top {
+        flex-direction: row;
+    } */
 
 }
