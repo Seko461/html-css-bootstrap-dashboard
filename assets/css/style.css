@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 /* body {
@@ -24,13 +24,15 @@
 .main_top {
     height: fit-content;
     flex-direction: column-reverse;
+    margin-bottom: 1rem;
+    border: 1px solid black;
 }
 
 .center_plus_right {
     flex-direction: column-reverse;
 }
 
-.card-body {
+.card {
     margin-bottom: 1rem;
 }
 
@@ -73,6 +75,13 @@ td~td {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+.check_item {
+    border: 1px solid black;
+    padding: .5rem;
+    gap: .5rem;
+    display: flex;
 }
 
 
