@@ -27,13 +27,13 @@
                 <!-- nav-items -->
 
 
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center py-3 px-1">
 
                     <!-- left -->
 
                     <div class="left">
                         <a class="navbar-brand" href="#">
-                            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                            <img width="150" src="./assets/img/logo.svg" alt="Bootstrap" width="30" height="24">
                         </a>
                     </div>
 
@@ -42,9 +42,14 @@
                     <!-- .center -->
 
                     <div class="center d-flex flex-grow-1">
-                        <form class="d-flex w-100" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        <form class="container-fluid">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control focus-ring-none"
+                                    placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
                         </form>
                     </div>
 
@@ -53,18 +58,28 @@
                     <!-- .right -->
 
                     <div class="right">
-                        <ul class="navbar-nav d-flex flex-row ">
-
+                        <ul class="navbar-nav d-flex flex-row gap-3 mx-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-list"></i>
+
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-circle-question"></i>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
                             </li>
                             <li class="nav-item dropdown z-1">
                                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
-                                    Link
+                                    <i class="fa-solid fa-bell"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -87,31 +102,37 @@
 
         <main id="site_main">
 
+
+            <!-- .side_bar -->
+
+
             <div class="side_bar d-flex flex-column justify-content-between p-3">
                 <div class="side_top">
                     <div class="side_bar_item ">
-                        <a href="" class="d-inline-flex align-items-center gap-3">
-                            <i class="fa-solid fa-house"></i> <span>Home</span>
+                        <a href="" class="d-inline-flex align-items-center gap-1 ">
+                            <i class="fa-solid fa-house col-4 text-center"></i> <span
+                                class="home col-8 text-center">Home</span>
                         </a>
                     </div>
 
                     <div class="side_bar_item ">
-                        <a href="" class="d-inline-flex align-items-center gap-3">
-                            <i class="fa-solid fa-house"></i> <span>Home</span>
+                        <a href="" class="d-inline-flex align-items-center gap-2">
+                            <i class="fa-solid fa-chart-simple col-4 text-center"></i> <span
+                                class="col-8 text-center">Stats</span>
                         </a>
                     </div>
 
                     <div class="side_bar_item">
-                        <a href="" class="d-inline-flex align-items-center gap-3">
-                            <i class="fa-solid fa-house"></i> <span>Home</span>
+                        <a href="" class="d-inline-flex align-items-center gap-2 ">
+                            <i class="fa-solid fa-signal"></i> <span>Signals</span>
                         </a>
                     </div>
                 </div>
                 <div class="side_bottom">
 
                     <div class="side_bar_item">
-                        <a href="" class="d-inline-flex align-items-center gap-3">
-                            <i class="fa-solid fa-house"></i> <span>Home</span>
+                        <a href="" class="d-inline-flex align-items-center gap-2 ">
+                            <i class="fa-solid fa-gear"></i> <span>Admin</span>
                         </a>
                     </div>
                 </div>

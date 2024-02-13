@@ -2,17 +2,55 @@
 
 * {
     font-family: 'Roboto', sans-serif;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
+
 }
 
-/* body {
-    max-width: 1400px;
+body {
+    min-width: 300px;
     margin: auto;
-} */
+    background-color: rgb(252, 252, 252);
+}
+
+.center span {
+    border-right: none;
+    background-color: rgb(241, 241, 241);
+}
+
+.center span:hover {
+    cursor: pointer;
+
+}
+
+.center input[type^="text"] {
+    border-left: none;
+    outline: none;
+
+    background-color: rgb(241, 241, 241);
+    padding-left: 0;
+}
+
+.center input[type^="text"]:focus {
+    outline: none;
+}
+
+.fa-bell {
+    color: orange;
+}
 
 .side_bar {
-
+    background-color: blue;
+    background-image: url(/assets/img/sidebar-bg.png);
     width: fit-content;
+}
+
+.side_bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.side_bar a .home {
+    transform: translateX(.2rem);
 }
 
 #site_main {
@@ -27,6 +65,8 @@
     margin-bottom: 1rem;
     border: 1px solid black;
 }
+
+
 
 .center_plus_right {
     flex-direction: column-reverse;
@@ -49,6 +89,7 @@ th~th,
 td~td {
     text-align: center;
 }
+
 
 
 .my_accordion {
