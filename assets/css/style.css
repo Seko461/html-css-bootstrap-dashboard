@@ -31,18 +31,18 @@
 }
 
 table {
-    font-size: .75rem
+    font-size: small;
 }
 
-th {
-    padding-inline: 1rem;
-}
-
-.start_date,
+.start-date,
 .roi {
-    visibility: hidden;
+    display: none;
 }
 
+th~th,
+td~td {
+    text-align: center;
+}
 
 @media screen and (min-width:575px) {
 
@@ -51,15 +51,22 @@ th {
         flex-direction: row;
     }
 
-    .start_date,
+    .start-date,
     .roi {
-        visibility: visible;
+        display: table-cell;
     }
 
 
 }
 
+/* @media screen and (min-width:768px) {
 
+    .start-date,
+    .roi {
+        display: table-cell;
+    }
+
+} */
 
 @media screen and (max-width:768px) {
     .side_bar_item>a>span {
