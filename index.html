@@ -142,126 +142,44 @@
 
             </div>
             <div class="main_right d-flex flex-column flex-grow-1">
-                <div class="main_top d-flex col-12  ">
+                <div class="main_top ">
+                    <div class="row">
+                        <div class="main_top_left flex-column col-12 col-lg-4 col-xl-6">
+                            <div class="up d-flex">
+                                <h2>Boolean</h2> <button class="btn"><a href="#">Piano Blaze</a></button>
+                            </div>
+                            <div class="down d-flex text-center align-items-center">
+                                <button class="btn"><a href="#">3 app</a></button>
+
+                                <div class="levels_button">
+                                    <button class="btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                        aria-controls="collapseWidthExample">
+                                        <i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <div class="my_collapse_horizontal collapse-horizontal" id="collapseWidthExample">
+                                        <div class="d-flex card-body">
+                                            <button class="btn"><a href="#">Boolean mobile app</a></button>
+                                            <button class="btn"><a href="#">Boolean web app</a></button>
+                                            <button class="btn"><a href="#">Boolean blog app</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn under"><a href="#">+</a></button>
 
 
-                    <div class="main_top_left d-flex col-12 col-sm-4 col-md-6">
-                        SINISTRA
-                    </div>
-                    <div class="center_plus_right d-flex col-12 col-sm-8 col-md-6">
-                        <div class="main_top_center d-flex col-sm-6 col-md-8">
-                            Centrale
+
+
+
+                            </div>
+                        </div>
+                        <div class="main_top_center col-12 col-lg-4 ">
 
                         </div>
-                        <div class="main_top_right d-flex col-sm-6 col-md-4 ">
-                            <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-
-                            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1"
-                                id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-
-                                    <form class="row g-3 needs-validation" novalidate>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom01" class="form-label">Nome</label>
-                                            <input type="text" class="form-control" id="validationCustom01" required>
-                                            <div class="valid-feedback">
-                                                Perfetto!
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom02" class="form-label">Cognome</label>
-                                            <input type="text" class="form-control" id="validationCustom02" required>
-                                            <div class="valid-feedback">
-                                                Perfetto!
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom03" class="form-label">Email</label>
-                                            <div class="input-group has-validation">
-                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                                <input type="mail" class="form-control" id="validationCustom03"
-                                                    aria-describedby="inputGroupPrepend" required>
-                                                <div class="invalid-feedback">
-                                                    Perfavore, inserisci una mail corretta
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="pass" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="pass" name="password"
-                                                minlength="8" required>
-                                            <div class="invalid-feedback">
-                                                Inserisci almeno 8 caratteri, per favore
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="validationCustom04" class="form-label">Indirizzo</label>
-
-                                            <input type="text" class="form-control" id="validationCustom04" required>
-                                            <div class="invalid-feedback">
-                                                Inserisci un indirizzo, per favore
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="validationCustom05" class="form-label">Città</label>
-                                            <input type="text" class="form-control" id="validationCustom05" required>
-                                            <div class="invalid-feedback">
-                                                Inserisci una città, per favore
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="validationCustom06" class="form-label">Stato</label>
-                                            <select class="form-select" id="validationCustom06" required>
-                                                <option selected disabled value="">Scegli...</option>
-                                                <option>...</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Scegli uno Stato, per favore
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <label for="validationCustom07" class="form-label">CAP</label>
-                                            <input type="text" class="form-control" id="validationCustom07" required>
-                                            <div class="invalid-feedback">
-                                                Inserisci un CAP valido, per favore
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label class="form-label" for="validationCustom08">Foto</label> <br>
-                                            <input type="file" class="form-control" id="validationCustom0" required>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="invalidCheck" required>
-                                                <label class="form-check-label" for="invalidCheck">
-                                                    Seleziona per proseguire
-                                                </label>
-                                                <div class="invalid-feedback">
-                                                    Clicca per proseguire
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary" type="submit">Salva</button>
-                                            <button class="btn btn-secondary" type="submit">Svuota</button>
-                                        </div>
-                                    </form>
-
-
-
-
-                                </div>
-                            </div>
-
+                        <div class="main_top_right col-12 col-lg-4 col-xl-2">
 
                         </div>
                     </div>

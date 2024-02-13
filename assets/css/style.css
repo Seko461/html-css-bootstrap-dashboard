@@ -96,19 +96,49 @@ nav>div {
 }
 
 .main_top {
-    height: fit-content;
+    /* height: fit-content; */
     /* flex-direction: column-reverse; */
     margin-bottom: 1rem;
     background-color: var(--db-primary);
     color: var(--db-lightest);
-    padding: 1rem .5rem;
+    padding: 1rem 1rem;
     border: 1px solid red;
 
 }
 
-.main_top div {
+.main_top_left,
+.main_top_center,
+.main_top_right {
     border: 1px solid yellow;
     display: flex;
+
+
+
+}
+
+.main_top_left .btn a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--db-primarydark);
+    padding: .25rem .5rem;
+    border-radius: 20px;
+}
+
+.levels_button {
+    transition: all .2s;
+}
+
+.my_collapse_horizontal {
+    z-index: 999;
+}
+
+.under {
+    z-index: 0;
+}
+
+.fa-angles-right {
+    color: white;
+
 }
 
 .card {
