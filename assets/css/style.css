@@ -6,15 +6,48 @@
 
 }
 
+:root {
+    --db-lightest: rgba(255, 255, 255, 1);
+    --db-lighter: rgba(248, 249, 250, 1);
+    --db-light: rgba(229, 229, 229, 1);
+    --db-dark: rgba(100, 97, 97, 1);
+    --db-darker: rgba(0, 0, 0, 1);
+    --db-primarydarker: rgba(5, 30, 52, 1);
+    --db-primarydark: rgba(23, 94, 192, 1);
+    --db-primary: rgba(27, 114, 232, 1);
+    --db-success: rgba(59, 153, 110, 1);
+    --db-accent: rgba(255, 209, 73, 1);
+    --db-allert: rgba(221, 56, 72, 1);
+    --db-cardtitle: #f7f7f7;
+}
+
+
 body {
     min-width: 300px;
     margin: auto;
     background-color: rgb(252, 252, 252);
 }
 
+nav {
+    background-color: var(--db-lighter);
+}
+
+nav>div {
+    background-color: var(--db-lightest);
+}
+
+.boolean_logo {
+    display: none;
+}
+
 .center span {
     border-right: none;
-    background-color: rgb(241, 241, 241);
+    background-color: var(--db-light);
+    color: var(--db-dark);
+}
+
+.nav-item-large {
+    display: none;
 }
 
 .center span:hover {
@@ -25,13 +58,16 @@ body {
 .center input[type^="text"] {
     border-left: none;
     outline: none;
-
-    background-color: rgb(241, 241, 241);
+    color: var(--db-dark);
+    background-color: var(--db-light);
     padding-left: 0;
 }
 
-.center input[type^="text"]:focus {
+/* .center input[type^="text"]:focus {
     outline: none;
+} */
+.nav-link {
+    color: var(--db-dark);
 }
 
 .fa-bell {
@@ -39,7 +75,7 @@ body {
 }
 
 .side_bar {
-    background-color: blue;
+    background-color: var(--db-primarydarker);
     background-image: url(/assets/img/sidebar-bg.png);
     width: fit-content;
 }
@@ -61,15 +97,18 @@ body {
 
 .main_top {
     height: fit-content;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     margin-bottom: 1rem;
-    border: 1px solid black;
+    background-color: var(--db-primary);
+    color: var(--db-lightest);
+    padding: 1rem .5rem;
+    border: 1px solid red;
+
 }
 
-
-
-.center_plus_right {
-    flex-direction: column-reverse;
+.main_top div {
+    border: 1px solid yellow;
+    display: flex;
 }
 
 .card {
@@ -143,14 +182,21 @@ td~td {
 
 }
 
-/* @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
 
-    .start-date,
-    .roi {
-        display: table-cell;
+    .boolean_logo {
+        display: inline-block;
     }
 
-} */
+    .mobile_boolean_logo {
+        display: none;
+    }
+
+    .nav-item-large {
+        display: inline-block;
+    }
+
+}
 
 @media screen and (max-width:768px) {
     .side_bar_item>a>span {
@@ -159,4 +205,15 @@ td~td {
 
 
 
+
+}
+
+@media screen and (min-width:992px) {
+    .boolean_logo {
+        display: inline-block;
+    }
+
+    .mobile_boolean_logo {
+        display: none;
+    }
 }
