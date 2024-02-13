@@ -136,7 +136,20 @@ nav>div {
     z-index: 0;
 }
 
-.fa-angles-right {
+.main_top_center .up>p,
+.main_top_right .up>p {
+    padding-top: .5rem;
+}
+
+.main_top_right .btn a {
+    border: 3px solid white;
+    padding: .5rem .75rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.fa-angles-right,
+.fa-plus {
     color: white;
 
 }
@@ -244,6 +257,10 @@ td~td {
     }
 
     .mobile_boolean_logo {
+        display: none;
+    }
+
+    .my_collapse_horizontal {
         display: none;
     }
 }
