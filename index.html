@@ -9,7 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f54afad4a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/sass/style.sass">
     <title>Dashboard Bootstrap</title>
 </head>
 
@@ -202,16 +202,81 @@
                                     aria-controls="offcanvasRight">
                                     <a href="#"><i class="fa-solid fa-plus"></i></a>
                                 </button>
+                                <!-- offcanvas -->
+                                <div class="offcanvas show offcanvas-size-xl offcanvas-end " tabindex="-1"
+                                    id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
+                                    <!-- offcanvas header-->
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
+                                        </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                     </div>
+
+
+                                    <!-- offcanvas body-->
                                     <div class="offcanvas-body">
-                                        ...
+                                        <form class="row g-2">
+                                            <div class="col-md-6">
+                                                <label for="inputName1" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="inputText1">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputText2" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="inputText2">
+                                            </div>
+                                            <div class="col-md-6 ">
+
+                                                <label class="form-label" for="inputMail3">Email</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-text">@</div>
+                                                    <input type="mail" class="form-control" id="inputMail3">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">Stato</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="inputZip" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label for="inputFile01" class="form-label">Foto</label>
+                                                <input type="file" class="form-control" id="inputFile01"
+                                                    aria-describedby="inputGroupFileAddon01" aria-label="Upload">
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="#" class="btn svuota">Svuota</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

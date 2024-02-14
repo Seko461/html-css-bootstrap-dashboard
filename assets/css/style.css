@@ -19,6 +19,7 @@
     --db-accent: rgba(255, 209, 73, 1);
     --db-allert: rgba(221, 56, 72, 1);
     --db-cardtitle: #f7f7f7;
+
 }
 
 
@@ -28,6 +29,8 @@ body {
     background-color: rgb(252, 252, 252);
 }
 
+
+/* #region header */
 nav {
     background-color: var(--db-lighter);
 }
@@ -74,6 +77,12 @@ nav>div {
     color: orange;
 }
 
+
+
+/* #endregion header */
+
+/* #region side bar */
+
 .side_bar {
     background-color: var(--db-primarydarker);
     background-image: url(/assets/img/sidebar-bg.png);
@@ -89,6 +98,11 @@ nav>div {
     transform: translateX(.2rem);
 }
 
+
+/* #endregion side bar */
+
+
+/* #region main */
 #site_main {
     display: flex;
     flex-direction: row;
@@ -154,6 +168,14 @@ nav>div {
 
 }
 
+.offcanvas-body {
+    font-size: small;
+}
+
+.svuota {
+    background-color: var(--db-accent);
+}
+
 .card {
     margin-bottom: 1rem;
 }
@@ -209,6 +231,11 @@ td~td {
     display: flex;
 }
 
+/* #endregion main */
+
+
+
+
 
 @media screen and (min-width:575px) {
 
@@ -239,6 +266,9 @@ td~td {
         display: inline-block;
     }
 
+    .offcanvas-size-xl {
+        --bs-offcanvas-width: min(95vw, 600px) !important;
+    }
 }
 
 @media screen and (max-width:768px) {
