@@ -243,7 +243,7 @@ td~td {
     background-color: #fff;
     color: var(--db-dark);
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     width: 100%;
     border: 1px solid var(--db-light);
     border-top: none;
@@ -260,12 +260,26 @@ td~td {
 }
 
 .my_panel {
-    padding: 0 18px;
+    padding: 1rem 2rem;
     display: none;
     background-color: white;
-    overflow: auto;
+    overflow: hidden;
     border: 1px solid var(--db-light);
 
+}
+
+.my_accordion:after {
+    content: '\2304';
+    color: #777;
+
+    font-size: 3rem;
+
+}
+
+.active:after {
+    content: '\2303';
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .check_item,
