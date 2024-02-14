@@ -25,6 +25,7 @@
 
 body {
     min-width: 450px;
+    max-width: 2000px;
     margin: auto;
     background-color: rgb(252, 252, 252);
 }
@@ -87,17 +88,38 @@ nav>div {
     background-color: var(--db-primarydarker);
     background-image: url(/assets/img/sidebar-bg.png);
     width: fit-content;
+    padding: 0 1rem;
 }
 
 .side_bar a {
     color: white;
     text-decoration: none;
+    font-size: .75rem;
 }
 
 .side_bar a .home {
     transform: translateX(.2rem);
 }
 
+.side_bar_item_bottom {
+    position: fixed;
+    bottom: 2rem;
+}
+
+.side_bar_item:hover,
+.side_bar_item_bottom:hover {
+    background-color: #f7f7f79b;
+
+    border-radius: 3px;
+
+
+
+}
+
+/* .side_bar_item:hover a:hover,
+.side_bar_item_bottom:hover a:hover {
+    color: var(--db-primarydark);
+} */
 
 /* #endregion side bar */
 
@@ -111,12 +133,12 @@ nav>div {
 }
 
 .main_top {
-    /* height: fit-content; */
+
     /* flex-direction: column-reverse; */
     margin-bottom: 1rem;
     background-color: var(--db-primary);
     color: var(--db-lightest);
-    padding: 1rem 1rem;
+    padding: 1rem;
     /* border: 1px solid red; */
 
 }
@@ -126,6 +148,7 @@ nav>div {
 .main_top_right {
     /* border: 1px solid yellow; */
     display: flex;
+
 
 
 
@@ -159,6 +182,7 @@ nav>div {
 .main_top_right .btn a {
     border: 3px solid white;
     padding: .5rem .75rem;
+
     border-radius: 10px;
     font-weight: 600;
 }
@@ -223,12 +247,26 @@ table {
     color: #fff;
 }
 
+.next_classes_actions span {
+    display: inline-block;
+}
+
+.next_classes_actions span i:hover {
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .next_classes_actions span i {
     color: #444;
     border: 1px solid grey;
     padding: .25rem;
     border-radius: 5px;
     margin-right: .3rem;
+}
+
+td:hover {
+    background-color: rgb(225, 225, 225);
 }
 
 th~th,
@@ -313,7 +351,9 @@ td~td {
         display: table-cell;
     }
 
-
+    .offcanvas-size-md {
+        --bs-offcanvas-width: 100vw !important;
+    }
 }
 
 @media screen and (min-width:768px) {
@@ -333,13 +373,16 @@ td~td {
     .offcanvas-size-xl {
         --bs-offcanvas-width: min(95vw, 600px) !important;
     }
+
+
 }
 
 @media screen and (max-width:768px) {
-    .side_bar_item>a>span {
+
+    .side_bar_item>a>span,
+    .side_bar_item_bottom>a>span {
         display: none;
     }
-
 
 
 
@@ -353,6 +396,7 @@ td~td {
     .mobile_boolean_logo {
         display: none;
     }
+
 
 
 
