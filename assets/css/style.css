@@ -24,7 +24,7 @@
 
 
 body {
-    min-width: 300px;
+    min-width: 450px;
     margin: auto;
     background-color: rgb(252, 252, 252);
 }
@@ -176,6 +176,11 @@ nav>div {
     background-color: var(--db-accent);
 }
 
+.my_card_title {
+    background-color: var(--db-light);
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
 .card {
     margin-bottom: 1rem;
 }
@@ -184,9 +189,45 @@ table {
     font-size: small;
 }
 
+.mr-3 {
+    margin-right: .75rem;
+}
+
 .start-date,
 .roi {
     display: none;
+}
+
+
+
+
+.done>span {
+    background-color: var(--db-success);
+    padding: .25rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.process>span {
+    background-color: var(--db-accent);
+    padding: .25rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.fail>span {
+    background-color: var(--db-allert);
+    padding: .25rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.next_classes_actions span i {
+    color: #444;
+    border: 1px solid grey;
+    padding: .25rem;
+    border-radius: 5px;
+    margin-right: .3rem;
 }
 
 th~th,
